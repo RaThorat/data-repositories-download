@@ -1,7 +1,9 @@
-# This is an example of importing repository information from repository website Re3data
+# This is an example of importing repository information.
+# The source is repository website Re3data
 
 response = requests.get("https://www.re3data.org/api/v1/repositories")
-print(response.status_code)# 200 Returned when the list could be successfully generated.
+print(response.status_code)
+# 200 Returned when the list could be successfully generated.
 
 
 # saving the xml file 
@@ -62,4 +64,5 @@ for name in root.iter('name'):
 
 for name in root.iter('name'):
     print(name.text)
-#the names of the repository appear. Copy paste the repository to excel. Give name 'Repositories.xlsx'.
+#the names of the repository appear. 
+#Copy paste the repository to excel. Give name 'Repositories.xlsx'.
