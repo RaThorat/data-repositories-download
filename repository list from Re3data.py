@@ -1,6 +1,6 @@
 # This is an example of importing repository information.
 # The source is repository website Re3data
-
+import requests
 response = requests.get("https://www.re3data.org/api/v1/repositories")
 print(response.status_code)
 # 200 Returned when the list could be successfully generated.
